@@ -10,7 +10,7 @@
 <div class="myHeader">
 <img src="http://1.bp.blogspot.com/-bFOPew8lLRg/VfkCnabxv3I/AAAAAAAAAgE/abVFhBoVxFQ/s1600/Sakshi-designstyle-colors-m%2B%25281%2529.png">
 <ul>
-<li><a href= "prove.html">Prove Mathematically</a></li>
+<li><%= link_to 'Prove Mathematically', '/articles/prove' %></li>
 <li><a href= "2048/index.html">2048 Game</a></li>
 <li><a href= "2548/index.html">2548 Game</a></li>
 <li><a href= "my_color_flood/index.html">Color Flood</a></li>
@@ -21,9 +21,11 @@
 	<div id="nav">
 		<ul>
           <br/>  <br/> <br/><br/>
-			<li><a href="aboutme.html ">About Me</a></li>
-	<br/>	<li><a href="contactme.html ">Contact Me</a></li>
-<br/><li><a href="academics.html">Academics</a></li><br/>
+<li><%= link_to 'About Me', '/articles/aboutme' %></li>
+	<br/>	
+<li><%= link_to 'Contact Me', '/articles/contactme'%></li>
+<br/>
+<li><%= link_to 'Academics', '/articles/academics'%></li><br/>
 		</ul>
 </div>
 
@@ -40,7 +42,7 @@
     <br/><br/><br/>
 <p><strong>Project:</strong></p>
 <ul>
-<li><strong><a href= "prove.html">Prove Mathematically</a></strong></li>
+<li><strong><%= link_to 'Prove Mathematically', '/articles/prove'%></strong></li>
 <br/>
 <li><strong><a href= "2548/index.html">2548 GAME!</a></strong></li>
 <br/>

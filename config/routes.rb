@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'articles/contactme'
+  get 'articles/aboutme'
+  get 'articles/academics'
+  get 'articles/prove'
+  get 'articles/index'
+
   resources :articles
   root 'articles#index'
 end
