@@ -12,9 +12,9 @@ Rails.application.routes.draw do
   get 'articles/2548index'
   get 'articles/color_flood'
 
-resources :blogs do
-  resources :comments
-end
+  resources :blogs do
+    resources :comments
+  end
 
 end
 
