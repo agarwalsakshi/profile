@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'blogs/index'
+root 'articles#index'
   get 'articles/contactme'
   get 'articles/aboutme'
   get 'articles/academics'
@@ -8,8 +10,11 @@ Rails.application.routes.draw do
   get 'articles/2548index'
   get 'articles/color_flood'
 
-  resources :articles
-  root 'articles#index'
+resources :blogs do
+  resources :comments
+end
+  resources :articles 
+
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
