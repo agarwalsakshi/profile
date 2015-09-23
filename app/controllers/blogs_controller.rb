@@ -11,6 +11,7 @@ class BlogsController < ApplicationController
   end
   def edit
     @blog = Blog.find(params[:id])
+
   end
   def create
    # debugger
@@ -32,6 +33,7 @@ def update
   end
 end
 def destroy
+  puts "_____________________________________________________________________________"
   @blog = Blog.find(params[:id])
   @blog.destroy
   redirect_to blogs_path
