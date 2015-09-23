@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # get 'blogs/index'
   
-  resources :articles 
   root 'articles#index'
   get 'articles/contactme'
   get 'articles/aboutme'
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
   get 'articles/2048index'
   get 'articles/2548index'
   get 'articles/color_flood'
+  resources :articles 
 
   resources :blogs do
     resources :comments
