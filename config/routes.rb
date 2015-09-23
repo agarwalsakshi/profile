@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   get 'articles/academics'
   get 'articles/prove'
   get 'articles/index'
+  get 'articles/2048index'
+  get 'articles/2548index'
+  get 'articles/color_flood'
 
   resources :articles
   root 'articles#index'

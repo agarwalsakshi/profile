@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag 'my_game_flood' %>
+  <title> Color Flood</title>
+</head>
+<body>
+  <h1 style= "color:blue">COLOR FLOOD</h1>
+<!--<div class= "section">
+  <p>ress the circle buttons to flood fill the image\n"+
+           "with the colour from the top left corner. Fill the\n"+
+           "entire image with the same colour in twenty-five or\n"+
+           "fewer flood fills.
+         </p>
+       </div>-->
+       <div class="section">
+  <ul>
+    <br/>
+    <li><strong><%= link_to 'Home Page', articles_index_path %></strong></li>
+    <br/>
+      <li><strong><%= link_to '2048 Game', articles_2048index_path %></strong></li>
+      <br/>
+      <li><strong><%= link_to '2548 Game', articles_2548index_path %></strong></li>
+      <br/>
+    </ul>
+  </div>
+
+<table>
+  <tr>
+    <td>
+      <table id="game-table">
+        <tbody id="game-table-tbody">
+        </tbody>
+      </table>
+    </td>
+    
+  </tr>
+</table>
+
+              <div>
+                <div  id = "button" class="button blue" onclick="flood ('blue')"></div>
+                <div  id = "button" class="button red" onclick="flood ('red')"></div>
+                <div  id = "button" class="button green" onclick="flood ('green')"></div>
+                <div  id = "button" class="button yellow" onclick="flood ('yellow')"></div>
+                <div  id = "button" class="button pink" onclick="flood ('pink')"></div>
+                <div  id = "button" class="button purple" onclick="flood ('purple')"></div>
+              </div>
+              <br/>
+              Turn: <span id="moves"></span>/<span id="max-moves"></span>
+          
+              <br/><br/>
+            <input class = "restart-button" type="submit" value="Start Game" onclick="new_game ()">
+<%= javascript_include_tag 'my_game_flood' %><br/>
+<b>HELP:</b><br/>
+<p>Select colors from given six colors and color will start filling from the top left corner. Fill the entire image with the same colour in twenty-two or fewer flood fills.</p>
+</body>
+</html>

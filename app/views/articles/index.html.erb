@@ -10,10 +10,10 @@
 <div class="myHeader">
 <img src="http://1.bp.blogspot.com/-bFOPew8lLRg/VfkCnabxv3I/AAAAAAAAAgE/abVFhBoVxFQ/s1600/Sakshi-designstyle-colors-m%2B%25281%2529.png">
 <ul>
-<li><%= link_to 'Prove Mathematically', '/articles/prove' %></li>
-<li><a href= "2048/index.html">2048 Game</a></li>
-<li><a href= "2548/index.html">2548 Game</a></li>
-<li><a href= "my_color_flood/index.html">Color Flood</a></li>
+<li><%= link_to 'Prove Mathematically', articles_prove_path %></li>
+<li><%= link_to '2048 Game', articles_2048index_path %></li>
+<li><%= link_to '2548 Game', articles_2548index_path %></li>
+<li><%= link_to 'Color Flood', articles_color_flood_path %></li>
 </ul>
 
 	</div>
@@ -21,11 +21,11 @@
 	<div id="nav">
 		<ul>
           <br/>  <br/> <br/><br/>
-<li><%= link_to 'About Me', '/articles/aboutme' %></li>
+<li><%= link_to 'About Me',   articles_aboutme_path %></li>
 	<br/>	
-<li><%= link_to 'Contact Me', '/articles/contactme'%></li>
+<li><%= link_to 'Contact Me', articles_contactme_path %></li>
 <br/>
-<li><%= link_to 'Academics', '/articles/academics'%></li><br/>
+<li><%= link_to 'Academics', articles_academics_path %></li><br/>
 		</ul>
 </div>
 
@@ -42,12 +42,12 @@
     <br/><br/><br/>
 <p><strong>Project:</strong></p>
 <ul>
-<li><strong><%= link_to 'Prove Mathematically', '/articles/prove'%></strong></li>
+<li><strong><%= link_to 'Prove Mathematically', articles_prove_path %></strong></li>
 <br/>
-<li><strong><a href= "2548/index.html">2548 GAME!</a></strong></li>
+<li><strong><%= link_to '2048 Game', articles_2048index_path %></strong></li>
 <br/>
-<li><strong><a href= "2048/index.html">2048 GAME!</a></strong></li><br/>
-<li><strong><a href= "my_color_flood/index.html">Color Flood</a></strong></li><br/>
+<li><strong><%= link_to '2548 Game', articles_2548index_path %></strong></li><br/>
+<li><strong><%= link_to 'Color Flood', articles_color_flood_path %></strong></li><br/>
 <br/>
 </ul>
 </div>
