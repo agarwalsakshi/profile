@@ -49,7 +49,6 @@ float: left;
 .myHeader a {
   text-decoration: none;
   color: #fff;
-  
 }
  
 .myHeader a:hover {
@@ -70,6 +69,7 @@ float: left;
     margin-right: -4px;
     position:relative;
   }
+
 #nav {
     line-height:100%;
     background-color:#eeeeee;
@@ -79,6 +79,7 @@ float: left;
     padding:10px; 
     padding-top: 30px;
 }
+
 #rightnav {
 line-height:100%;
 background-color:#eeeeee;
@@ -88,13 +89,14 @@ float: right;
 padding:10px;
 padding-top: 30px;
 }
+
 #section {
     width:350px;
     padding:10px;
     padding-top: 30px;
 float: left;
- 
 }
+
 #footer {
     background-color: #444;
     color:white;
