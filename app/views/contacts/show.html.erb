@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong>
+  <%= @contact.Name %>
+</p>
+ 
+<p>
+  <strong>Email:</strong>
+  <%= @contact.Email %>
+</p>
+
+<p>
+	<strong>Query:</strong>
+	<%= @contact.Query %>
+</p>
+<br/>
+<br/>
+<%= link_to 'Generate New Query', new_contact_path %> OR <%= link_to 'Go to Home Page', articles_path %>
+<br/><br/>
+<%= link_to 'See all the Queries', contacts_path  %>

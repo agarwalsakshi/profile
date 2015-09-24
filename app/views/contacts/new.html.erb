@@ -1,0 +1,39 @@
+<%= form_for :contact, url: contacts_path do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@contact.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @contact.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <h2>Enter Your Query Here:</h2>
+  <br/>
+  <br/>
+  <p>
+    <%= f.label :Name %><br>
+    <%= f.text_field :Name %>
+  </p>
+ 
+  <p>
+    <%= f.label :Email %><br>
+    <%= f.text_field :Email %>
+  </p>
+ 
+ <p>
+ <%= f.label :Query %><br/>
+ <%= f.text_area :Query %>
+ </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= link_to 'Back', articles_path %>
+<br/>
+<%= link_to 'See all the Queries', contacts_path %>
