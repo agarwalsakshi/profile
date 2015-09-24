@@ -10,6 +10,7 @@
 <div class="myHeader">
 <img src="http://1.bp.blogspot.com/-bFOPew8lLRg/VfkCnabxv3I/AAAAAAAAAgE/abVFhBoVxFQ/s1600/Sakshi-designstyle-colors-m%2B%25281%2529.png">
 <ul>
+	<li><%= link_to 'Blog', controller: 'blogs' %></li>
 <li><%= link_to 'Prove Mathematically', articles_prove_path %></li>
 <li><%= link_to '2048 Game', articles_2048index_path %></li>
 <li><%= link_to '2548 Game', articles_2548index_path %></li>
@@ -21,13 +22,12 @@
 	<div id="nav">
 		<ul>
           <br/>  <br/> <br/><br/>
-<li><%= link_to 'About Me',   articles_aboutme_path %></li>
-	<br/>	
-<li><%= link_to 'Contact Me', articles_contactme_path %></li>
-<br/>
-<li><%= link_to 'Academics', articles_academics_path %></li><br/>
 
-<li><%= link_to 'Blog', controller: 'blogs' %></li><br/>
+<li><%= link_to 'About Us', articles_contactme_path %></li>
+<br/>
+<li><%= link_to 'Our Academics', articles_academics_path %></li><br/>
+
+<li><%= link_to 'Contact Us', new_contact_path %></li><br/>
 		</ul>
 </div>
 
@@ -42,8 +42,10 @@
 <div id = "rightnav">
     <br/>
     <br/><br/><br/>
-<p><strong>Project:</strong></p>
+<p><strong>Projects:</strong></p>
 <ul>
+	<li><strong><%= link_to 'Blog', controller: 'blogs' %></strong></li>
+	<br/>
 <li><strong><%= link_to 'Prove Mathematically', articles_prove_path %></strong></li>
 <br/>
 <li><strong><%= link_to '2048 Game', articles_2048index_path %></strong></li>
